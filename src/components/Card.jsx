@@ -1,10 +1,12 @@
 import React from 'react'
 
-const Card = ({ children }) => {
+const Card = ( { data } ) => {
+  const { name, course } = data
   return (
-    <>
-      <div>Hola, soy una tarjeta</div>
-    </>
+    <div>
+      <p>Hola, {name}</p>
+      <p>Has elegido el curso de {course}</p>
+    </div>
   )
 }
 
